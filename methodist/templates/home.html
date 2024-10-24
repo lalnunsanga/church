@@ -1,0 +1,267 @@
+{%load static%}
+{% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a class="active" href="/template">FOOTER</a>
+  <a href="/methodist">News</a>
+  <a href="/">HOME</a>
+  <a href="/category">Churches Acitivty</a>
+  <a href="/staff_list">Staff </a>
+  <a href="/plot">Plot</a>
+  <a href="/post_detail">POST DETAIL</a>
+  <a href="#">MYA</a>
+</div>
+<br>
+<br>
+
+--------------
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Hospital Staff Chart</title>  
+  <style>  
+      body {  
+          font-family: Arial, sans-serif;  
+          margin: 0;  
+          padding: 0;  
+          background-color: #f4f4f9;  
+      }  
+      header {  
+          background-color: #250cb4;  
+          color: white;  
+          text-align: center;  
+          padding: 20px 0;  
+      }  
+      .container {  
+          display: flex;  
+          flex-direction: column; /* Arrange Director on top and departments below */  
+          align-items: center; /* Center align the columns */  
+          margin: 20px;  
+      }  
+      .director {  
+          background-color: #FFD700; /* Distinct color for Director */  
+          border: 1px solid #ccc;  
+          border-radius: 8px;  
+          padding: 30px;  
+          width: 50%; /* Wider column for Director */  
+          margin-bottom: 20px; /* Space below Director */  
+          text-align: center;  
+          font-size: 1.5em; /* Larger text for Director */  
+      }  
+      .department {  
+          background-color: #fff;  
+          border: 1px solid #ccc;  
+          border-radius: 8px;  
+          padding: 20px;  
+          width: 25%; /* Adjust for desired size */  
+          margin: 10px;  
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
+      }  
+      .department h2 {  
+          text-align: center;  
+          color: #333;  
+      }  
+      .staff-member {  
+          margin: 10px 0;  
+          padding: 5px;  
+          border-bottom: 1px solid #eee;  
+      }  
+      footer {  
+          background-color: #4CAF50;  
+          color: white;  
+          text-align: center;  
+          padding: 15px 0;  
+          position: relative;  
+          bottom: 0;  
+          width: 100%;  
+          margin-top: 20px;  
+      }  
+      .departments {  
+          display: flex; /* Flexbox for departments */  
+          justify-content: space-around; /* Space out departments */  
+          flex-wrap: wrap; /* Allow wrapping for responsive design */  
+          width: 100%; /* Full width for departments */  
+      }  
+  </style>  
+</head>  
+<body>  
+
+<header>  
+  <h1>Hospital Staff Chart</h1>  
+</header>  
+
+<div class="container">  
+  <div class="director">  
+      <h2>Director</h2>  
+      <p>Dr. Emily Johnson</p>  
+  </div>  
+
+  <div class="departments">  
+      <div class="department">  
+          <h2>Doctors</h2>  
+          <div class="staff-member">Dr. John Smith</div>  
+          <div class="staff-member">Dr. Jane Doe</div>  
+          <div class="staff-member">Dr. Alice Brown</div>  
+      </div>  
+      
+      <div class="department">  
+          <h2>Nurses</h2>  
+          <div class="staff-member">Nurse Mary Johnson</div>  
+          <div class="staff-member">Nurse Patricia Williams</div>  
+          <div class="staff-member">Nurse Linda Davis</div>  
+      </div>  
+      
+      <div class="department">  
+          <h2>Laboratory</h2>  
+          <div class="staff-member">Lab Tech Tom Green</div>  
+          <div class="staff-member">Lab Tech Susan White</div>  
+          <div class="staff-member">Lab Tech Eric Black</div>  
+      </div>  
+
+      <div class="department">  
+          <h2>HR</h2>  
+          <div class="staff-member">HR Manager Jessica Taylor</div>  
+          <div class="staff-member">HR Assistant Robert Martinez</div>  
+      </div>  
+
+      <div class="department">  
+          <h2>Administration</h2>  
+          <div class="staff-member">Admin Lisa Wilson</div>  
+          <div class="staff-member">Admin Michael Garcia</div>  
+      </div>  
+
+      <div class="department">  
+          <h2>Support Staff</h2>  
+          <div class="staff-member">Janitor Steve Anderson</div>  
+          <div class="staff-member">Receptionist Nancy Thomas</div>  
+      </div>  
+  </div>  
+</div>  
+
+
+
+-------------------------
+    
+<ul>
+  {%for x in record %}
+  <li>{{x.title}} : {{x.content}}</li>
+  {%endfor%}
+</ul>
+
+<ul>
+  {% for y in news %}
+  <li>
+  <h1> Title : {{y.title}}</h1>
+  <p>Date : {{y.date}}</p>
+  <p>Author : {{y.author}}</p>
+  <p>{{y.description}}</p>
+  
+  <br>
+    {% if y.category_image %}
+    <td>
+      <img src="{{ y.category_image.url }}" alt="" class=""
+    </td>
+    {% endif %}
+    
+  </li>
+  {%endfor%}
+</ul>
+
+<script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
+
+<div class="col-md-6 offset-md-3">
+<h1>All Members of Staff</h1>
+<br/>
+</body>
+</html>
